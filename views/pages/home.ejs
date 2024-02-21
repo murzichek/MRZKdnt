@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../layouts/head', { title: 'Dona | Plus'}) %>
+</head>
+<body class="background on-surface-text">
+    <header class="top-bar">
+
+    </header>
+    
+    <main class="main">
+        <article>
+            <section class="hero">
+                <div class="container">
+                    <figure class="hero-banner">
+                        <img src="/images/banner1.png"   alt="" class="img-cover">
+                    </figure>
+                    <div class="hero-card">
+                        <figure class="card-banner">
+                            <img src="/images/ava.png" width="120" height="120" alt="" class="img-cover">
+                        </figure>
+                        <div class="card-content">
+                            <h2 class="title-large">Mrzk</h2>
+                            <p class="subtitle body-medium on-surface-variant-text">
+                                C++ | C#
+                            </p>
+                            <p class="card-text body-medium on-surface-variant-text">
+                                Novice programmer from St.Petersburg
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container lg-col-2">
+                <section class="card elevated contribute">
+                    <h2 class="title-medium">
+                        Send me some money
+                    </h2>
+                    <form class="contribute-form" data-contribute-form>
+                        <div class="counter-wrapper">
+                            <div class="body-medium on-surface-variant-text counter-label">
+                                Enter the donation amount :
+                            </div>
+                            <div class="counter">
+                                <button type="button" class="icon-btn filled" data-decrement-btn>
+                                    <span class="material-symbols-rounded">remove </span>
+                                    <div class="state-layer"></div>
+                                </button>
+                                <div class="text-field-wrapper counter-field">
+                                    <input type="number" name="amount" value="1" min="1" max="999" required 
+                                    class="text-field outlined body-large" data-counter-field 
+                                    data-form-field>
+                                </div>
+                                <button type="button" class="icon-btn filled" data-increment-btn>
+                                    <span class="material-symbols-rounded">add</span>
+                                    <div class="state-layer"></div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-field-wrapper">
+                            <label for="name" class="text-field-label body-large">Name</label>
+                            <input type="text" name="name" id="name" 
+                            placeholder="Name or nickname" class="text-field outlined body-large" data-form-field>
+                        </div>
+                        <div class="text-field-wrapper">
+                            <label for="email" class="text-field-label body-large">Email*</label>
+                            <input type="email" name="email" id="email" 
+                            placeholder="Your email" required class="text-field outlined body-large" data-form-field>
+                        </div>
+                        <div class="text-field-wrapper">
+                            <label for="message" class="text-field-label body-large">Message</label>
+                            <textarea name="message" id="message" 
+                            placeholder="Type something here (optional)" class="text-field outlined body-large" data-form-field></textarea>
+                        </div>
+                        <button type="submit" class="button filled label-large" data-submit-btn>
+                           Confirm donation with $<span data-total> 1 </span>
+                           <div class="state-layer">
+
+                           </div>
+                        </button>
+                    </form>
+                </section>
+                <div>
+                    <section class="card outlined about">
+                        <h2 class="title-medium">About me</h2>
+                        <p class="card-texxt on-surface-variant-text body-medium">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Nobis facere, ipsa alias a aliquid error unde adipisci cupiditate iusto vero.
+                            Deserunt suscipit voluptatem eum delectus assumenda maiores error ex labore?
+                        </p>
+                        <p class="on-surface-variant-text body-medium wrapper">
+                            Ways to contact me :
+                        </p>
+                        <ul class="social-list">
+                            <li>
+                                <a href="https://instagram.com/davnolietovsebulo" target="_blank"
+                                class="social-link">
+                                <img src="/images/instagram.svg" width="24" height="24" alt="Instagram">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://discord.com/invite/nEwyUkgD" target="_blank"
+                                class="social-link">
+                                <img src="/images/discord.svg" width="24" height="24" alt="Discord">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https:/t.me/onuguda" target="_blank"
+                                class="social-link">
+                                <img src="/images/tg.svg" width="24" height="24" alt="Telegram">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="card outlined history">
+                        <h2 class="title-medium">Top Supporters (updated every week) :</h2>
+                        <ul class="history-list">
+                            <li class="history-card">
+                                <div class="card-header">
+                                    <div class="card-avatar label-large">Kr</div>
+                                    <h3 class="title-small card-title">
+                                        Kristina send <span class="primary-text">$2</span>
+                                    </h3>
+                                </div>
+                                <p class="card-body body-large on-surface-variant-text">
+                                    TEST TEST TEST
+                                </p>
+                            </li>
+
+                            <li class="history-card">
+                                <div class="card-header">
+                                    <div class="card-avatar label-large">Mu</div>
+                                    <h3 class="title-small card-title">
+                                        Murzik send <span class="primary-text">$5</span>
+                                    </h3>
+                                </div>
+                                <p class="card-body body-large on-surface-variant-text">
+                                    Я молодец!
+                                </p>
+                            </li>
+
+                            <li class="history-card">
+                                <div class="card-header">
+                                    <div class="card-avatar label-large">Хо</div>
+                                    <h3 class="title-small card-title">
+                                        Холод северных лесов send <span class="primary-text">$1</span>
+                                </div>
+                                </h3>
+                                <p class="card-body body-large on-surface-variant-text">
+                                    для бота, броу
+                                </p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <p class="body-medium on-surface-variant-text">
+            2024 | Made with love
+        </p>
+    </footer>
+
+</body>
+</html>
